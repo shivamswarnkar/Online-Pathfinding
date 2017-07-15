@@ -1,0 +1,63 @@
+%file: env5.txt
+%	
+%	Note that "%" is a comment character (the rest of line is ignored)
+%	We are basically reading several sequences of numbers,
+%			one sequence per line.
+%		Labels like "epsilon", "start", etc, will be ignored.
+%		Also, commas (",") and colons (":") are ignored.
+%		The order of the first 6 sequences of numbers are fixed:
+%
+%	For simplicity, there is one bounding box B0 
+%		and all other polygons are contained inside B0.
+%		REMARKS: when polygons nest inside each other, alternate
+%		levels must change their CW or CCW orientation.
+%
+%	The structure of environment input files are as follows:
+%
+%	1.	radius:  r		% radius of robot
+%	2.	epsilon: eps 		% small positive number
+%	3.	bX:     x x' x'' x'''	%  (bX, bY) is the bounding box
+%	4.	bY:     y y' y'' y'''	% 	with vertices in CW order
+%	5.	start:  x1 y1		% start configuration
+%	6.	goal:   x2 y2		% goal configuration
+%
+%	7.	p1X:    x x' x'' x'''	%  (p1X, p1Y) is a polygon
+%	8.	p1Y:    y y' y'' y'''	% 	with vertices in CCW order
+%	9.	p2X:    x x' x'' x'''	%  (p2X, p2Y) is a polygon
+%	10.	p2Y:    y y' y'' y'''	% 	with vertices in CCW order
+%	...	...			%  ... as many polygons as needed
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Intro to Robotics, Spring 2017
+%	Chee Yap
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Robot:
+radius: 0.7
+
+% Resolution:
+epsilon: 0.1
+
+%Bounding Box:
+PX: 0 0 10 10 		
+PY: 0 10 10 0		
+
+%Configurations:
+start:  1, 9
+goal:	9, 1
+
+% What follows is a sequence of polygons (in CCW order)
+
+%First Wall
+PX: 2 2 2.5 2.5
+PY: 9 2 2    9
+
+%Second Wall
+PX: 4.5  4.5   5   5
+PY: 8    1     1   8
+
+%Third Wall 
+PX: 7   7   7.5  7.5
+PY: 9   2   2    9
+
+% END
