@@ -1,5 +1,8 @@
 # Online-Pathfinding
 
+[For a quick overview, look at our presentation.](https://github.com/shivamswarnkar/Online-Pathfinding/blob/master/Presentation.pdf)
+[For more details, read our report.](https://github.com/shivamswarnkar/Online-Pathfinding/blob/master/FinalProjectReport.pdf) 
+
 Intro:
 
 In this project we aim to find different methods to solve Online Pathfinding problem. In this  simulation, a disk robot is simulated in matlab to navigate an unknown environment while trying  to reach a goal. There are two methods used to implement the navigation. The first is Repetitive  Soft Subdivision Search (RSSS), where the robot runs a soft subdivision search algorithm on the  map it is building each time it scans. The second is Bounded Modified Subdivision Search  (BMSS), where the algorithm uses Subdivision Search approach with new classifier predicates.  BMSS is supposed to be a modified and efficient solution for Online Pathfinding, which  eliminates the repetitive computations done by RSSS.
