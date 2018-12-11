@@ -1,7 +1,7 @@
 # Online-Pathfinding
 
-[For a quick overview, look at our presentation.](https://github.com/shivamswarnkar/Online-Pathfinding/blob/master/Presentation.pdf)
-[For more details, read our report.](https://github.com/shivamswarnkar/Online-Pathfinding/blob/master/FinalProjectReport.pdf) 
+For a quick overview, look at our [presentation](https://github.com/shivamswarnkar/Online-Pathfinding/blob/master/Presentation.pdf).
+For more details, read our [report](https://github.com/shivamswarnkar/Online-Pathfinding/blob/master/FinalProjectReport.pdf). 
 
 Intro:
 
