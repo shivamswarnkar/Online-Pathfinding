@@ -32,7 +32,7 @@ Note : Explored map, time and box visited are updated after each iteration in al
 Run the MainGui.m file to run the project which will show the following GUI.
 ![GUI](demo_imgs/gui1.png)
 
-There are mainly four panels
+#### There are mainly four panels
 	- Input Map (to show input map), 
 	- Explored Map (to show so far explored map), 
 	- Map Control ( to show/hide subdiv, path and laser), 
